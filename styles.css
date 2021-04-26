@@ -1,0 +1,10 @@
+#translatedText{
+    border: 2px solid blue ;
+    width: 500px;
+    height: 300px;
+}
+
+button{
+    display: block;
+    margin: 3rem;
+}
