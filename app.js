@@ -1,0 +1,24 @@
+const form = document.querySelector("#input");
+const dispDiv = document.querySelector("#translatedText");
+
+const baseURL = "https://api.funtranslations.com/translate/minion.json";
+
+form.elements.translate.addEventListener("click", async (e) => {
+  e.preventDefault();
+
+  const input = form.elements.textarea;
+  const ansText = await translate(input.value);
+  dispDiv.innerText = ansText;
+  input.value="";
+
+});
+
+const translate = async (val) => {
+  const config = {
+    params: {
+      text: val,
+    },
+  };
+  const res = await axios.get(`${baseURL}`, config);
+  return res.data.contents.translated;
+};
