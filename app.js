@@ -9,7 +9,7 @@ form.elements.translate.addEventListener("click", async (e) => {
   const input = form.elements.textarea;
   const ansText = await translate(input.value);
   dispDiv.innerText = ansText;
-  input.value="";
+  input.value = "";
 
 });
 
