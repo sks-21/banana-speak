@@ -63,8 +63,8 @@ button {
 
 
 button:hover{
-  background-color: ;
-  box-shadow: 4px 4px 2px 1px rgb(58, 65, 63);
+  box-shadow: 4px 4px 2px 1px #9CA3AF;
+  transition: box-shadow 0.2s;
 }
 
 button:active {
