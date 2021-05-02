@@ -1,10 +1,76 @@
-#translatedText{
-    border: 2px solid blue ;
-    width: 500px;
-    height: 300px;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
+:root {
+  --primary-color: #FCD34D;
 }
 
-button{
-    display: block;
-    margin: 3rem;
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0px;
+  overflow: hidden;
+}
+
+.hero-div {
+  background-color: var(--primary-color);
+  padding: 1rem;
+  border-bottom-left-radius: 2rem;
+}
+
+.hero-heading {
+  text-align: center;
+}
+
+main {
+  margin: auto;
+  width: 600px;
+}
+
+img {
+  width: 300px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 1rem;
+}
+
+textarea {
+  box-sizing: border-box;
+  margin: 1rem 0rem 1rem 0rem;
+  width: 600px;
+  height: 125px;
+  border: 1.6px solid black ;
+}
+
+
+button {
+  display: block;
+  /* color: white ;  */
+  padding: 1rem 2rem;
+  border: none;
+  background-color: var(--primary-color);
+  margin: 0rem 0rem 1rem 0rem;
+}
+
+main span{
+  font-size:small;
+  font-weight: 400 ;
+}
+
+#translatedText {
+  box-sizing: border-box;
+  border: 1.5px solid black;
+  overflow: scroll;
+  width: 600px;
+  height: 100px;
+  margin-bottom: 1rem;
+}
+
+footer {
+  background-color: var(--primary-color);
+  margin-top: 2rem ;
+  padding: 3rem;
+}
+
+footer .content {
+  text-align: center;
 }
