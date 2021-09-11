@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap");
 
 :root {
   --primary-color: #fcd34d;
@@ -7,7 +6,7 @@
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   margin: 0px;
   overflow: hidden;
 }
@@ -46,7 +45,7 @@ textarea {
   height: 125px;
   font-size: 1rem;
   border: 1.6px solid black;
-  padding:0.5rem 1rem ;
+  padding: 0.5rem 1rem;
 }
 
 button {
@@ -58,17 +57,16 @@ button {
   cursor: pointer;
   font-size: 1rem;
   background-color: var(--primary-color);
-  margin-bottom:1rem ;
+  margin-bottom: 1rem;
 }
 
-
-button:hover{
-  box-shadow: 4px 4px 2px 1px #9CA3AF;
+button:hover {
+  box-shadow: 4px 4px 2px 1px #9ca3af;
   transition: box-shadow 0.2s;
 }
 
 button:active {
-  background-color: #FDE68A;
+  background-color: #fde68a;
   transform: translateY(2px);
 }
 
@@ -76,7 +74,7 @@ main span {
   font-size: small;
   font-weight: 400;
   display: block;
-  margin-top:1.3rem;
+  margin-top: 1.3rem;
 }
 
 #translatedText {
@@ -86,8 +84,7 @@ main span {
   width: 600px;
   height: 100px;
   margin-bottom: 1rem;
-  padding:0.5rem 1rem ;
-
+  padding: 0.5rem 1rem;
 }
 
 footer {
@@ -99,5 +96,31 @@ footer {
 }
 
 footer .content {
- font-size: 1rem;
+  font-size: 1rem;
+}
+
+
+/* Media queries */
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  nav {
+    width: 110%;
+  }
+  main {
+    width: 90%;
+    /* margin:1rem; */
+  }
+
+  textarea {
+    width: 250px;
+  }
+
+  #translatedText {
+    width: 250px;
+  }
+
+  footer{
+    width: 110%;
+  }
 }

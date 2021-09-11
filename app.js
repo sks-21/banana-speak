@@ -17,6 +17,7 @@ const translate = async (val) => {
       text: val,
     },
   };
+  
   const res = await axios.get(`${baseURL}`, config);
   return res.data.contents.translated;
 };
