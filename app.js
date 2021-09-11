@@ -11,11 +11,11 @@ form.elements.translate.addEventListener("click", async (e) => {
   dispDiv.innerText = ansText;
 });
 
-form.elements.clear.addEventListener('click',()=>{
+form.elements.clear.addEventListener('click', () => {
   e.preventDefault();
 
-  form.elements.textarea.value="";
-  dispDiv.innerText="";
+  form.elements.textarea.value = "";
+  dispDiv.innerText = "";
 })
 
 const translate = async (val) => {
@@ -24,7 +24,7 @@ const translate = async (val) => {
       text: val,
     },
   };
-  
+
   const res = await axios.get(`${baseURL}`, config);
   return res.data.contents.translated;
 };
