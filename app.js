@@ -11,6 +11,13 @@ form.elements.translate.addEventListener("click", async (e) => {
   dispDiv.innerText = ansText;
 });
 
+form.elements.clear.addEventListener('click',()=>{
+  e.preventDefault();
+
+  form.elements.textarea.value="";
+  dispDiv.innerText="";
+})
+
 const translate = async (val) => {
   const config = {
     params: {
